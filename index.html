@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BakeHaven</title>
+</head>
+<body>
+    <header>
+        <h1>BakeHaven</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to BakeHaven</h2>
+        <p>Welcome to our bakery! We are passionate about baking. From breads to pastries, every item is made with love and the finest ingredients. Our bakery offers a variety of delectable treats that are sure to satisfy your taste buds.Each morning, our skilled bakers are up before dawn, mixing and kneading dough to bring you the freshest breads and pastries. We believe in the traditional methods of baking and ensure that every item that comes out of our ovens is of the highest quality.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div id="carousel-container">
+            <div class="carousel-slide">
+                <img src="photo1.jpg" alt="photo 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="photo2.jpg" alt="photo 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="photo3.jpg" alt="photo 3">
+            </div>
+    
+            <button id="prevBtn" onclick="prevSlide()">❮</button>
+            <button id="nextBtn" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BakeHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
